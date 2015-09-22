@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wonder Week: September Edition</title>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css" />
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+		<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="home" data-anchor="home" class="leftText">
+			<div class="wrap">
+				<div class="text">
+					<h1>Wonder Week!</h1>
+					<h2>September Edition</h2>
+					<p>One week out of each month, llamas take a break from work. During this time, the llamas hold events and gain special abilities.</p>
+
+					<img src="images/balloons.png" alt="Balloons"/>
+				</div><!-- text -->
+			</div><!-- close wrap -->
+		</div><!-- close home -->
+
+		<div id="familyReunion" data-anchor="familyReunion">
+			<div class="wrap">
+				<div class="text">
+					<h2>Family Reunion</h2>
+					<h3>Monday</h3>
+					<p>Family comes first, they say! The alpacas and the llamas come together to just hang out and catch up.</p>
+
+					<img src="images/alpaca-white.png" alt="White Alpaca" />
+				</div><!-- close text -->
+			</div><!-- close wrap -->
+		</div><!-- close familyReunion -->
+
+		<div id="leafCatching" data-anchor="leafCatching" class="leftText">
+			<div class="wrap">
+				<div class="text">
+					<h2>Leaf-Catching Contest</h2>
+					<h3>Tuesday</h3>
+					<p>Only one day in September do the leaves fall from the trees. Whichever llama catches the most leaves receive an extra week off of work!</p>
+
+					<img src="images/butterfly-net.png" alt="Butterfly Net" />
+				</div><!-- close text -->
+			</div><!-- close wrap -->
+		</div><!-- close leafCatching -->
+
+		<div id="friedChickenMagic" data-anchor="friedChickenMagic">
+			<div class="wrap">
+				<div class="text">
+					<h2>Fried Chicken Magic</h2>
+					<h3>Wednesday</h3>
+					<p>The local fried chicken restaurant, Chick'n, dips its chicken in special rainbow dust. It gives the llamas long luxurious rainbow hair.</p>
+
+					<img src="images/hair.png" alt="Rainbow Sherbet Hair Induced by Fried Chicken" />
+				</div><!-- close text -->
+			</div><!-- close wrap -->
+		</div><!-- close friedChickenMagic -->
+
+		<div id="quidditch" data-anchor="quidditch" class="leftText">
+			<div class="wrap">
+				<div class="text">
+					<h2>Quidditch Free-Play</h2>
+					<h3>Thursday</h3>
+					<p>A Harry Potter movie marathon is played on 4 jumbotrons built in Llama-ville's sports stadium where they set up a quidditch field. The audience can watch the game and the movie simultaneously!</p>
+
+					<img src="images/golden-snitch.png" alt="Golden Snitch" />
+				</div><!-- close text -->
+			</div><!-- ckise wrao -->
+		</div><!-- close quidditch -->
+		
+		<div id="saturnSurfing" data-anchor="saturnSurfing" >
+			<div class="wrap">
+				<div class="text">
+					<h2>Saturn Surfing</h2>
+					<h3>Friday</h3>
+					<p>A llama's favorite activity is to go surfing. Even the most vicious waves in Hawaii don't satisfy their wild side. It's not a big deal because their special surfboard can fly them to Saturn faster than the speed of light.</p>
+
+					<img src="images/surfer-llama.png" alt="Surfing Llama" />
+				</div><!-- close text -->
+			</div><!-- close wrap -->
+		</div><!-- close saturnSurfing -->
+
+		<div id="glowInTheDark" data-anchor="glowInTheDark" class="leftText glow lightsOn">
+			<div class="wrap">
+				<div class="text">
+					<h2>Glowing in the Dark</h2>
+					<h3>Saturday</h3>
+					<p>They call this a blessing and curse. This happens all week long, so by the third day, the novelty wears off and it's hard for them to sleep, but they save a ton on their Con Ed bill. </p>
+
+					<button id="switchOff">switch off</button>
+                    <button id="switchOn">switch on</button>
+
+				</div><!-- close text -->
+			</div><!-- close wrap -->
+		</div><!-- close glowInTheDark -->
+
+		<div id="fireworks" data-anchor="fireworks">
+			<div class="wrap">
+				<div class="text">
+					<h2>Fireworks Finale</h2>
+					<h3>Sunday</h3>
+					<p>On the 4th of July, the American Llama Group sponsors a fireworks show and caters over 4000 tons of grass, the gluten-free variety. They gather in a secluded area and watch the fireworks for a last celebration.</p>
+
+					<img src="images/two-fireworks.png" alt="Fireworks" />
+				</div><!-- close text -->
+			</div><!-- close wrap -->
+		</div><!-- close fireworks -->
+
+	<!-- bottom navigation -->
+	<footer>
+			<ul>
+				<li id="home-icon"><a href="#" data-scroll="home"><img src="images/navigate6.png" alt="Up Arrow"/></a></li>
+				<li id="mon"><a href="#" data-scroll="familyReunion">Mo</a></li>
+				<li id="tue"><a href="#" data-scroll="leafCatching">Tu</a></li>
+				<li id="wed"><a href="#" data-scroll="friedChickenMagic">We</a></li>
+				<li id="thu"><a href="#" data-scroll="quidditch">Th</a></li>
+				<li id="fri"><a href="#" data-scroll="saturnSurfing">Fr</a></li>
+				<li id="sat"><a href="#" data-scroll="glowInTheDark">Sa</a></li>
+				<li id="sun"><a href="#" data-scroll="fireworks">Su</a></li>
+			</ul>
+	</footer>
+		
+		<!-- On/Off switch for glow in the dark llama javascript-->
+		<script>
+			$("#switchOff").click(function () {
+				$('.glow').addClass('afterDark');
+		  	});
+		
+	    	$("#switchOn").click(function () {
+				$('.glow').removeClass('afterDark');
+	    	});
+		</script>
+		
+		<!-- footer navigation scroll javascript-->
+		<script src="js/scroll-nav.js"></script>
+	</body>
+</html>
